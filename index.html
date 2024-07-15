@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main class="contenido">
+        <div class="contenido__izquierda">
+            <header class="header">
+                <img class="logo" src="./assets/Logo.png" alt="Logo alura">
+            </header>
+            <div class="contenido__formulario">
+                <div class="formulario">
+                    <textarea name="texto" class="input" id="texto" placeholder="Ingrese el texto aquí"
+                    rows="18" ></textarea>
+                    <span class="recordatorio">Solo letras minúsculas y sin acentos</span>
+                    <div class="botones">
+                        <button class="btn btn-primary" onclick="encriptar()">Encriptar</button>
+                        <button class="btn btn-secondary" onclick="descifrar()">Desencriptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resultado">
+            <p class="datos-resultado" id="datos-resultado"></p>
+            <button class="btn btn-secondary display-none btn-copiar" onclick="copiar()">Copiar</button>
+            <img class="imagen resultado-inicio" src="./assets/Muñeco.png" alt="Esperando que encriptes texto">
+            <h2 class="h2-resultado resultado-inicio">Ningún mensaje fue encontrado</h2>
+            <p class="texto-resultado resultado-inicio">Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Desarrollado por Rafael Jimenez</p>
+    </footer>
+    <script src="./scripts/scripts.js"></script>
+</body>
+</html>
